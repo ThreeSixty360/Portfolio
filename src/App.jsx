@@ -15,17 +15,18 @@ export default function App() {
         </div>
       </nav>
 
-      <main className="container">
-        <section className="hero-text">
-          <h1>Welcome to My Portfolio</h1>
-          <p>Hi, I'm Raymond Gantala, a Junior Software Developer and Computer Engineering graduate with a passion for building clean, responsive, and user-friendly web applications.
-            I'm currently growing my skills in HTML, CSS, JavaScript, React, and Python through hands-on projects and continuous learning. I enjoy solving problems, exploring new technologies, and turning ideas into functional applications.
-            I'm excited to keep learning, contribute to real-world projects, and grow as a developer.
-          </p>
-        </section>
-
-        <section className='hero-image'>
-          <img src={bikecultme} alt="Raymond Gantala" className="pfp" />
+      <main className="main-content" id="about">
+        <section className="container_1">
+          <div className="hero-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Raymond Gantala, a Junior Software Developer and Computer Engineering graduate with a passion for building clean, responsive, and user-friendly web applications.
+              I'm currently growing my skills in HTML, CSS, JavaScript, React, and Python through hands-on projects and continuous learning. I enjoy solving problems, exploring new technologies, and turning ideas into functional applications.
+              I'm excited to keep learning, contribute to real-world projects, and grow as a developer.
+            </p>
+          </div>
+          <div className="hero-image">
+            <img src={bikecultme} alt="Raymond Gantala" className="pfp" />
+          </div>
         </section>
 
         <section className="projects" id="projects">
