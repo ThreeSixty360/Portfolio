@@ -6,7 +6,10 @@ export default function App() {
   return (
     <>
       <nav className="navbar">
-        <h2 className="logo">Raymond Gantala</h2>
+        <div className="logo">
+          <span className="logo-dot"></span>
+          Raymond Gantala
+        </div>
 
         <div className="nav-links">
           <a href="#about">About</a>
@@ -16,16 +19,59 @@ export default function App() {
       </nav>
 
       <main className="main-content" id="about">
-        <section className="container_1">
+        <section className="container_1" id="hero">
           <div className="hero-text">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Raymond Gantala, a Junior Software Developer and Computer Engineering graduate with a passion for building clean, responsive, and user-friendly web applications.
-              I'm currently growing my skills in HTML, CSS, JavaScript, React, and Python through hands-on projects and continuous learning. I enjoy solving problems, exploring new technologies, and turning ideas into functional applications.
-              I'm excited to keep learning, contribute to real-world projects, and grow as a developer.
+            <div className="status-badge">
+              🟢 Open to Junior Software Developer Opportunities
+            </div>
+            <p className="greeting">👋 Hello, I'm</p>
+
+            <h1>Raymond Gantala</h1>
+
+            <h2 className="hero-role">
+              Junior Software Developer
+            </h2>
+
+            <p className="hero-description">
+              Computer Engineering graduate focused on building responsive, user-friendly web applications with React, JavaScript, and Python.
+              Currently looking for my first Junior Software Developer opportunity while continuously learning through real-world projects.
             </p>
+
+            <div className="hero-buttons">
+              <a href="#projects" className="btn primary">
+                View Projects
+              </a>
+
+              <a
+                href="/Raymond-Gantala-Resume.pdf"
+                className="btn secondary"
+              >
+                Download Resume
+              </a>
+            </div>
+
+            <div className="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Python</span>
+            </div>
+
+            <div className="social-links">
+              <a href="https://github.com/ThreeSixty360">GitHub</a>
+              <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+              <a href="mailto:rcgantala99@gmail.com">Email</a>
+            </div>
+
           </div>
+
           <div className="hero-image">
-            <img src={bikecultme} alt="Raymond Gantala" className="pfp" />
+            <img
+              src={bikecultme}
+              alt="Raymond Gantala"
+              className="pfp"
+            />
           </div>
         </section>
 
